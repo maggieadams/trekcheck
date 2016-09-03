@@ -1,0 +1,40 @@
+
+div {
+	border: 1px solid black;
+}
+
+.master-div {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: 1px solid blue;
+}
+
+.clearfix:after {
+    content:"";
+    display:block;
+    clear: both;
+}
+
+.sub-div {
+	flex-direction: row;
+	float: left;
+}
+
+.checklist-item-name {
+	width: 20%;
+	border: 1px solid red;
+	flex-direction: row;
+}
+
+.checklist-group-name {
+	width: 80%;
+	border: 1px solid green;
+	flex-direction: row;
+}
+
+.checklist-items {
+	flex-direction: row;
+	width: 100%;
+}
