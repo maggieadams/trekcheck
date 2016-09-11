@@ -1,81 +1,216 @@
 <!doctype html>
 <html>
 
-	<head>
+	<head id="headtheme">
 		<meta charset="utf8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<title>Checklist</title>
 		<!-- This is a checklist of all items to bring on the trek, and who is bringing them. The items should turn green when the user indicated the item is packed. -->
 	</head>
-	<body>
-			<article>
+	<body id="mytheme">
+			<article class="main-header clearfix">
+				<!-- <div class="ui menu">
+					 <div class="header item">
+					 	 Trek Check
+					 </div>
+					 <a class="item">
+					 	 Home
+					 </a>
+					 <a class="item">
+						  Checklist
+					 </a>
+					 <a class="item">
+					  	Route
+					</a>
+				</div> -->
+			<img src="https://bnbs-studio.s3.amazonaws.com/Marketing/GS%20Badges/Screen%20Shot%202016-09-11%20at%208.29.43%20AM.png?AWSAccessKeyId=AKIAILMM2GQBXWXB5OBA&Expires=1474201829&Signature=YTavMxv7CzQzuYjY5Y1ZMPjpc94%3D">
 				<header>
-					<h1 class="main-title">Checklist</h1>
+					<h1 class="main-title theme-style">TREK CHECK</h1>
 					<nav class="nav"> 
-						<a href="#" class="menu-link">Nav Item</a>
-						<a href="#" class="menu-link">Nav Item</a>
-						<a href="#" class="menu-link">Nav Itemm</a>
-						<a href="#" class="menu-link">Nav Item</a> 
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">HOME</a></button>
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">CHECKLIST</a></button>
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">ROUTE</a></button>
 					</nav>
 				</header>
 			</article>
 			<article>
-			<table class="ui celled padded table">
+			<table class="ui celled padded table theme-style">
 			  <thead>
-			    <tr><th class="single line">Evidence Rating</th>
-			    <th>Effect</th>
+			    <tr><th class="single line theme-style">Items to Pack</th>
+				    <th>John</th>
+				    <th>Diana</th>
+				    <th>Martha</th>
+				    <th>Jameson</th>
 			  </tr></thead>
 			  <tbody>
 			    <tr>
-			      <td class="single line">
-			        Power Output
+			    <td class="single line checklist-item theme-style">Sleeping Bag</td>
+					<td class="single line checklist-item theme-style">
+						<button class="ui toggle button active theme-style"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item theme-style">
+			      	<button class="ui toggle button theme-style"><i class="minus icon"></i></button>
 			      </td>
-			      <td>
-			        <h2 class="ui center aligned header">A</h2>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Tent</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
 			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Sleeping Pad</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Stove</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Fuel</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Personal Mess Kit</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				<tr>
+			    <td class="single line checklist-item">Cook Set</td>
+					<td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+			      	<button class="ui toggle button"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				 <tr>
+			    <td class="single line checklist-item theme-style">Water Purification</td>
+					<td class="single line checklist-item theme-style">
+						<button class="ui toggle button active theme-style"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item theme-style">
+			      	<button class="ui toggle button theme-style"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				 <tr>
+			    <td class="single line checklist-item theme-style">Fire Starter</td>
+					<td class="single line checklist-item theme-style">
+						<button class="ui toggle button active theme-style"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item theme-style">
+			      	<button class="ui toggle button theme-style"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				 <tr>
+			    <td class="single line checklist-item theme-style">Camp Chair</td>
+					<td class="single line checklist-item theme-style">
+						<button class="ui toggle button active theme-style"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item theme-style">
+			      	<button class="ui toggle button theme-style"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
+				 <tr>
+			    <td class="single line checklist-item theme-style">Headlamp</td>
+					<td class="single line checklist-item theme-style">
+						<button class="ui toggle button active theme-style"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item theme-style">
+			      	<button class="ui toggle button theme-style"><i class="minus icon"></i></button>
+			      </td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+			      <td class="single line checklist-item">
+						<button class="ui toggle button active"><i class="checkmark icon"></i></button>
+					</td>
+				</tr>
 			  </tbody>
 			</table>
-			<div class="master-div clearfix">
-				<div class="sub-div clearfix">
-				<div class="checklist-item-name">
-					<ul>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-						<li>Item 4</li>
-						<li>Item 5</li>
-						<li>Item 6</li>
-						<li>Item 7</li>
-						<li>Item 8</li>
-						<li>Item 9</li>
-						<li>Item 10</li>
-				</div>
-			</article>
-			<article>
-				<div class="checklist-group-name">
-					<ul>
-						<li>Person 1</li>
-						<li>Person 2</li>
-						<li>Person 3</li>
-						<li>Person 4</li>
-						<li>Person 5</li>
-						<li>Person 6</li>
-				</div>
-				</div>
-			</article>
-			<article>
-				<div class="checklist-items">
-					<ul>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-						<li>Item 4</li>
-						<li>Item 5</li>
-						<li>Item 6</li>
-				</div>
-			</article>
-		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>

@@ -1,30 +1,67 @@
-
 <!doctype html>
 <html>
 
-	<head>
+	<head id="headtheme">
 		<meta charset="utf8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
-		<link rel="stylesheet" href="main.css">
-		<title>Trek Check</title>
-		<!-- This is the homepage - there are links to each section of the website. -->
+		<link rel="stylesheet" href="styles/main.css">
+		<title>Checklist</title>
+		<!-- This is a checklist of all items to bring on the trek, and who is bringing them. The items should turn green when the user indicated the item is packed. -->
 	</head>
-	<body>
-			<article>
+	<body id="mytheme">
+			<article class="main-header clearfix">
+				<!-- <div class="ui menu">
+					 <div class="header item">
+					 	 Trek Check
+					 </div>
+					 <a class="item">
+					 	 Home
+					 </a>
+					 <a class="item">
+						  Checklist
+					 </a>
+					 <a class="item">
+					  	Route
+					</a>
+				</div> -->
+			<img src="https://bnbs-studio.s3.amazonaws.com/Marketing/GS%20Badges/Screen%20Shot%202016-09-11%20at%208.29.43%20AM.png?AWSAccessKeyId=AKIAILMM2GQBXWXB5OBA&Expires=1474201829&Signature=YTavMxv7CzQzuYjY5Y1ZMPjpc94%3D">
 				<header>
-					<h1 class="main-title">Trek Yourself Before You Wreck Yourself.</h1>
+					<h1 class="main-title theme-style">TREK CHECK</h1>
 					<nav class="nav"> 
-						<button class="ui primary basic button"><a href="#" class="menu-link">Nav Item</a></button>
-						<button class="ui primary basic button"><a href="#" class="menu-link">Nav Item</a></button>
-						<button class="ui primary basic button"><a href="#" class="menu-link">Nav Item</a></button>
-						<button class="ui primary basic button"><a href="#" class="menu-link">Nav Item</a> </button>
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">HOME</a></button>
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">CHECKLIST</a></button>
+						<button class="ui primary basic button theme-style"><a href="#" class="menu-link">ROUTE</a></button>
 					</nav>
 				</header>
 			</article>
-
-
+			<article class="sign-up-form">
+				<h2>Welcome!</h2>
+				 <h2>Trek Check is an all-inclusive trek planner that can be used to share information about your trip checklist, itinerary, and group contact info.</h2>
+				<h3>Sign up below to start planning your next trek.</h3>
+				<form class="ui form">
+				  <div class="field">
+				    <label>First Name</label>
+				    <input type="text" name="first-name" placeholder="First Name">
+				  </div>
+				  <div class="field">
+				    <label>Last Name</label>
+				    <input type="text" name="last-name" placeholder="Last Name">
+				  </div>
+				  <div class="field">
+				    <label>Email</label>
+				    <input type="text" name="email" placeholder="Email">
+				  </div>
+				  <div class="field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label>I agree to the Terms and Conditions</label>
+				    </div>
+				  </div>
+				  <button class="ui button" type="submit">Submit</button>
+				</form>
+			</article>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>
-	</html>
+</html>
 
