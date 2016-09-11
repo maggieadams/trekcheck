@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf8">
+		<meta name="viewport" content="initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<title>Itinerary</title>
@@ -10,10 +11,11 @@
 	</head>
 	<body id="mytheme">
 			<article class="main-header clearfix">
-			<img src="https://bnbs-studio.s3.amazonaws.com/Marketing/GS%20Badges/Screen%20Shot%202016-09-11%20at%208.29.43%20AM.png?AWSAccessKeyId=AKIAILMM2GQBXWXB5OBA&Expires=1474201829&Signature=YTavMxv7CzQzuYjY5Y1ZMPjpc94%3D">
+			<div class="main-header-bg"></div>
 				<header>
 					<h1 class="main-title theme-style">TREK CHECK</h1>
 					<nav class="nav"> 
+						<button class="ui button theme-style"><a href="https://maggieadams.github.io/trekcheck/route.html" class="menu-link">SIGN IN</a></button>
 						<button class="ui primary basic button theme-style"><a href="https://maggieadams.github.io/trekcheck/index.html" class="menu-link">HOME</a></button>
 						<button class="ui primary basic button theme-style"><a href="https://maggieadams.github.io/trekcheck/checklist.html" class="menu-link">CHECKLIST</a></button>
 						<button class="ui primary basic button theme-style"><a href="https://maggieadams.github.io/trekcheck/route.html" class="menu-link">ROUTE</a></button>
@@ -21,60 +23,32 @@
 				</header>
 			</article>
 			<!-- Google map with route goes here-->	
-				
-				    <title>Simple Map</title>
-				    <meta name="viewport" content="initial-scale=1.0">
-				    <meta charset="utf-8">
-				    <style>
-				      html, body {
-				        height: 100%;
-				        margin: 0;
-				        padding: 0;
-
-				      }
-				      #map {
-				        height: 50%;
-				        border: border: 1px solid #4c4c2f;;
-				      }
-				    </style>
-				  </head>
-				  <body>
-				    <div id="map"></div>
-				    <script>
-				      var map;
-				      function initMap() {
-				        map = new google.maps.Map(document.getElementById('map'), {
-				          center: {lat: 40.7831, lng: -73.9712},
-				          zoom: 8
-				        });
-				      }
-				    </script>
-				    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTvd3jhA4lyjXluW8FoRxQxVG4Cn3IX4o&callback=initMap"
-				    async defer></script>	
+			<div id="map"></div>
+				  	
 				
 
 				<article class="itinerary">
 					<div class="ui list">
-					  <div class="item">
+					  <a class="js-route-item item" data-lat="44.4571788" data-lng="-74.1972612,2258" href="#">
 					    <div class="header">Starting Point</div>
-					    Jones Pond Put-in
-					  </div>
-					  <div class="item">
+					    Jones Pond Boat Launch
+					  </a>
+					  <a class="item js-route-item" data-lat="44.4496729" data-lng="-74.2017494,2260" href="#">
 					    <div class="header">Night 1</div>
 					    Jones Pond Campsite
-					  </div>
-					  <div class="item">
+					  </a>
+					  <a class="item js-route-item" data-lat="44.4279884" data-lng="-74.2816619" href="#">
 					    <div class="header">Night 2</div>
 					    Bent Spike Lean-To
-					  </div>
-					  <div class="item">
+					  </a>
+					  <a class="item js-route-item" data-lat="44.3836251" data-lng="-74.3201999" href="#">
 					    <div class="header">Night 3</div>
 					    St. Regis Pond Campsite
-					  </div>
-					  <div class="item">
+					  </a>
+					  <a class="item js-route-item" data-lat="44.3587768" data-lng="-74.2953519"href="#">
 					    <div class="header">Finishing Point</div>
-					    Little Clear Pond
-					  </div>
+					    Little Clear Pond Boat Launch
+					  </a>
 					</div>
 				</article>
 				
@@ -82,5 +56,7 @@
 			
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="scripts/main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTvd3jhA4lyjXluW8FoRxQxVG4Cn3IX4o&callback=initMap"
+				    async defer></script>
 	</body>
 	</html>

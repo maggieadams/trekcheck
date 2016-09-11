@@ -5,10 +5,20 @@
     clear: both;
 }
 
-.main-header img {
+.main-header-bg {
     opacity: 0.2;
+
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+   	height: 100%;
+
+   	background-image: url('https://bnbs-studio.s3.amazonaws.com/Marketing/GS%20Badges/Screen%20Shot%202016-09-11%20at%208.29.43%20AM.png?AWSAccessKeyId=AKIAILMM2GQBXWXB5OBA&Expires=1474201829&Signature=YTavMxv7CzQzuYjY5Y1ZMPjpc94%3D');
+   	background-size: cover;
+   	background-position: center center;
+
+   	z-index: -1;
 }
 
 .nav {
@@ -32,8 +42,17 @@ h2 {
 	border: 3px solid #4c4c2f;
 	text-align: center;	
 	line-height: 0.1;
-/*	background-image: url("https://bnbs-studio.s3.amazonaws.com/Marketing/GS%20Badges/Screen%20Shot%202016-09-11%20at%208.17.32%20AM.png?AWSAccessKeyId=AKIAILMM2GQBXWXB5OBA&Expires=1474201105&Signature=X24QQIUA02U8m3GIUxVk8XYHIpM%3D");
-*/}
+	position: relative;
+}
+
+#mytheme .ui.button.theme-style a {
+	color: #4c4c2f;
+}
+
+#mytheme .ui.button.theme-style {
+	box-shadow:  0 0 0 1px #4c4c2f inset!important;
+
+}
 
 .main-title {
 	color: #4c4c2f;
@@ -47,7 +66,7 @@ h2 {
 }
 
 #mytheme .ui.primary.basic.button {
-	box-shadow: #4c4c2f !important;
+	box-shadow:  0 0 0 1px #4c4c2f inset!important;
 }
 
 .ui.button.toggle.active {
@@ -75,6 +94,32 @@ h2 {
 	padding: 30px;
 }
 
+ #map {
+	height: 50%;
+	border: border: 1px solid #4c4c2f;;
+}
+
+
+.item.active {
+	background-color: white;
+	-webkit-animation: flash 1.5s;
+}	
+
+@-webkit-keyframes flash {
+
+	0% {
+		background-color: transparent;
+	}
+
+	50% {
+		background-color: green;
+	}
+
+	100% {
+		background-color: transparent;
+	}
+
+}
 
 
 
