@@ -47,6 +47,7 @@ h2 {
 
 #mytheme .ui.button.theme-style a {
 	color: #4c4c2f;
+	font-weight: 900;
 }
 
 #mytheme .ui.button.theme-style {
@@ -97,6 +98,15 @@ h2 {
  #map {
 	height: 50%;
 	border: border: 1px solid #4c4c2f;;
+}
+
+.item.js-route-item {
+	padding-bottom: 15px !important;
+	font-size: 17px;
+}
+
+.item.js-route-item.indent {
+	padding-left: 15px;
 }
 
 
