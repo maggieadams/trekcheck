@@ -29,6 +29,16 @@
 	color: #4c4c2f !important;
 }
 
+.ui.segment {
+	padding: 20px;
+	margin: 0;
+	color: #4c4c2f !important;
+}
+
+article {
+	margin: 0;
+}
+
 h1 {
 	line-height: 1;
 	font-size: 40px;
@@ -36,6 +46,7 @@ h1 {
 
 h2 {
 	text-align: center;
+	padding: 5%;
 }
 
 #mytheme .main-header {
@@ -108,7 +119,6 @@ h2 {
 .item.js-route-item.indent {
 	padding-left: 15px;
 }
-
 
 .item.active {
 	background-color: white;
